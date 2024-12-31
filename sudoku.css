@@ -1,0 +1,73 @@
+body {
+    margin-top: 200px;
+}
+svg {
+    filter: drop-shadow(5px 5px 10px lightgrey);
+}
+.logo {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 20px;
+    z-index: -1;
+}
+.logo.droite {
+    right: 20px;
+}
+.logo.gauche {
+    left: 20px;
+}
+.logo.gauche.BS {
+    background-image: url("BS/malto.png");
+    width: 400px;
+    height: 400px;
+}
+.logo.droite.BS {
+    background-image: url("BS/BS.png");
+    width: 400px;
+    height: 400px;
+}
+.logo.droite.DB {
+    background-image: url("DB/Logo.png");
+    width: 800px;
+    height: 400px;
+}
+.logo.gauche.DB {
+    background-image: url("DB/SonGoMalte.png");
+    width: 600px;
+    height: 400px;
+    top: 50px;
+}
+.logo.droite.NT {
+    background-image: url("NT/NT.png");
+    width: 400px;
+    height: 400px;
+}
+rect {
+    fill: white;
+    stroke: black;
+    stroke-width: .5;
+}
+rect.solution {
+    fill: #eee;
+}
+rect.space {
+    fill-opacity: .5;
+    stroke-opacity: .3;
+}
+text {
+    font-family:Arial, Helvetica, sans-serif;
+}
+text:not(.original) {
+    font-size: 10px;
+    text-anchor: end;
+    fill: gray;
+}
+text.original {
+    font-size: 20px;
+    text-anchor: middle;
+    fill: grey;
+    stroke: grey;
+    stroke-width: 1;
+    dominant-baseline: central;
+}
